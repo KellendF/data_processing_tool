@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb44ca84-b522-4299-a31c-6d9fa666cc0e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UpPCYdIRPZ8RY1Kbpr12nSYg4w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../personnel/management" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/find_files" />
+      <recent name="$PROJECT_DIR$/tensorflow" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.find_one_damage">
+    <configuration name="find_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="modeltools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_files/find_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="find_one_damage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="modeltools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_one_damage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_file2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="modeltools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/find_files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_files/test_file2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_find_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="modeltools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/find_files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_files/test_find_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_find_file3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="modeltools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/find_files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_files/test_find_file3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.find_one_damage" />
+        <item itemvalue="Python.test_find_file3" />
+        <item itemvalue="Python.test_file2" />
+        <item itemvalue="Python.test_find_2" />
+        <item itemvalue="Python.find_file" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb44ca84-b522-4299-a31c-6d9fa666cc0e" name="Default Changelist" comment="" />
+      <created>1576050437041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576050437041</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="640" y="392" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576823068298">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="640" y="392" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576823068298" />
+    <state x="363" y="284" width="424" height="484" key="FileChooserDialogImpl/67.27.957.741@67.27.957.741" timestamp="1576125247380" />
+    <state width="1826" height="168" key="GridCell.Tab.0.bottom" timestamp="1576832445516">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="168" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576832445516" />
+    <state width="934" height="154" key="GridCell.Tab.0.bottom/67.27.957.741@67.27.957.741" timestamp="1576138570751" />
+    <state width="1826" height="168" key="GridCell.Tab.0.center" timestamp="1576832445514">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="168" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576832445514" />
+    <state width="934" height="154" key="GridCell.Tab.0.center/67.27.957.741@67.27.957.741" timestamp="1576138570751" />
+    <state width="1826" height="168" key="GridCell.Tab.0.left" timestamp="1576832445513">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="168" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576832445513" />
+    <state width="934" height="154" key="GridCell.Tab.0.left/67.27.957.741@67.27.957.741" timestamp="1576138570750" />
+    <state width="1826" height="168" key="GridCell.Tab.0.right" timestamp="1576832445515">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="168" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576832445515" />
+    <state width="934" height="154" key="GridCell.Tab.0.right/67.27.957.741@67.27.957.741" timestamp="1576138570751" />
+    <state width="1826" height="339" key="GridCell.Tab.1.bottom" timestamp="1576752742310">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="339" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576752742310" />
+    <state width="1826" height="339" key="GridCell.Tab.1.center" timestamp="1576752742310">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="339" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576752742310" />
+    <state width="1826" height="339" key="GridCell.Tab.1.left" timestamp="1576752742310">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="339" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576752742310" />
+    <state width="1826" height="339" key="GridCell.Tab.1.right" timestamp="1576752742310">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1826" height="339" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576752742310" />
+    <state x="612" y="287" key="SettingsEditor" timestamp="1576823986812">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="612" y="287" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1576823986812" />
+    <state x="67" y="38" key="SettingsEditor/67.27.957.741@67.27.957.741" timestamp="1576126773336" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576060405093">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576060405093" />
+  </component>
+</project>
