@@ -28,11 +28,8 @@ def copy_file(old_path,new_dir):
 
 
 if __name__ == '__main__':
-    file_list1 = get_file('../filezilla_/part/part_data_new/part_data_new')
-    file_list2 = get_file('../filezilla_/part/part_data_new/part_jpg_new')
+    file_list1 = get_file('../test/')
     for file in file_list1:
         if file.endswith('.json'):
-            copy_file(file,'../filezilla_/part/part_data_new/part_data/')
-
-    for file in file_list2:
-        copy_file(file,'../filezilla_/part/part_data_new/part_data/')
+            move_file(file,'../test/2019-03-11-banghao-jpg/')
+    print('移动完成')

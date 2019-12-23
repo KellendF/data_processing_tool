@@ -1,5 +1,5 @@
 '''
-    提取部件中损伤（占比求法）
+    提取部件中损伤(调参)
 '''
 from find_files.dir_tool import get_file
 import json
@@ -57,16 +57,20 @@ def judge_point(damage_point,part_point,img_size):
     part_point_arr = np.array([part_point],dtype = np.int32)
     cv.fillPoly(img_arr, part_point_arr, 255)
     part_list = np.argwhere(img_arr == 255)
-    part_tuple = tuple(map(tuple, part_list))
     for j,damage in enumerate(damage_point):
         damage_point_arr = np.array([damage],dtype = np.int32)
         cv.fillPoly(img_arr, damage_point_arr, j)
         damage_list = np.argwhere(img_arr == j)
-        damage_tuple = tuple(map(tuple, damage_list))
         # r = [same_point for same_point in part_list if same_point in damage_list]
-        r = set(part_tuple).intersection(set(damage_tuple))
-        if len(r)/len(part_tuple) > 0.001:
-            return True
+        # 调参
+        same_num = 0
+        for same_point in part_list:
+            if same_point in damage_list:
+                same_num += 1
+                if same_num == 80 :
+                    return True
+        # if len(r) == 50:
+        #     return True
 
 
 
@@ -75,7 +79,7 @@ def judge_point(damage_point,part_point,img_size):
 
 
 if __name__ == '__main__':
-    path = '../../test'
+    path = '../../test/HouMen-Z'
     part = 'HouMen-Z'
     out_dir = path+'/'+part+'/'
     if not os.path.exists(out_dir):
@@ -87,8 +91,8 @@ if __name__ == '__main__':
             if image_name:
                 if judge_point(damage_point, part_point,img_size):
                     img_path = os.path.join(os.path.dirname(file_path),image_name)
-                    shutil.copy(file_path,out_dir)
-                    shutil.copy(img_path,out_dir)
+                    shutil.move(file_path,out_dir)
+                    shutil.move(img_path,out_dir)
                     print(file_path,'--->命中')
     print('检测完成')
 

@@ -2,14 +2,20 @@
     计算文件数量
 '''
 
-from data_to_heavy import get_file
+from data_to_heavy import *
 
 
 if __name__ == '__main__':
-    path = '../JY_data/segment/glass/2019-12-13-singapore_glass_data'
+    path = '../data_1200'
     file_list = get_file(path)
     list = []
     for i in file_list:
-        if i.endswith('.JPG'):
+        if os.path.splitext(i)[-1] in ['.jpeg', '.JPG', '.jpg', '.png']:
             list.append(i)
+
+    # for i in file_list:
+    #     type = os.path.splitext(i)[-1]
+    #     list.append(type)
+    # print(set(list))
+
     print(len(list))

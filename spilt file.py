@@ -11,7 +11,7 @@ def split_file(path):
     '''
     if os.path.splitext(path)[-1] == '.json':
         create_dir_move_file(path,'json')
-    if os.path.splitext(path)[-1] in ['.jpg','.JPG','.png']:
+    if os.path.splitext(path)[-1] in ['.jpg','.JPG','.png','.jpeg']:
         create_dir_move_file(path,'jpg')
     if os.path.splitext(path)[-1] == '.xml':
         create_dir_move_file(path,'xml')

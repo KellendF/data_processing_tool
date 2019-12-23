@@ -91,15 +91,15 @@ def isPointinPolygon(point_1, point_2):
 
 
 if __name__ == '__main__':
-    path = '../test/QianMen-Z'
-    part = 'QianMen-Z'
+    path = '../../test/HouMen-Z'
+    part = 'HouMen-Z'
     out_dir = path+'/'+part+'/'
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
     file_list = get_file(path)
     for file_path in file_list:
         # 分割文件路径获取文件类型
-        if os.path.splitext(file_path)[1] == '.json':
+        if os.path.splitext(file_path)[-1] == '.json':
             # 查询有相应部件的文件
             damage_point, part_point,image_name = find_damage(file_path,part)
             if image_name:
