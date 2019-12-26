@@ -7,7 +7,6 @@ import os
 import re
 import numpy as np
 import shutil
-# from find_files.judge import *
 import cv2 as cv
 
 
@@ -56,31 +55,26 @@ def judge_point(damage_point,part_point,img_size):
     img_arr = np.zeros(img_size,dtype = np.uint8)
     part_point_arr = np.array([part_point],dtype = np.int32)
     cv.fillPoly(img_arr, part_point_arr, 255)
+    # 去除轮廓像素点
+    # _, contours, _ = cv.findContours(img_arr, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+    cv.drawContours(img_arr, part_point_arr, -1, 0, 1)
     part_list = np.argwhere(img_arr == 255)
-    for j,damage in enumerate(damage_point):
-        damage_point_arr = np.array([damage],dtype = np.int32)
-        cv.fillPoly(img_arr, damage_point_arr, j)
-        damage_list = np.argwhere(img_arr == j)
-        # r = [same_point for same_point in part_list if same_point in damage_list]
-        # 调参
-        same_num = 0
-        for same_point in part_list:
-            if same_point in damage_list:
-                same_num += 1
-                if same_num == 80 :
-                    return True
-        # if len(r) == 50:
-        #     return True
-
-
-
-
+    part_list = tuple(map(tuple, part_list))
+    for j, damage in enumerate(damage_point):
+        j += 1
+        damage_point_arr = np.array([damage], dtype=np.int32)
+        cv.fillPoly(img_arr, damage_point_arr, j )
+        damage_list = np.argwhere(img_arr == j )
+        damage_list = tuple(map(tuple, damage_list))
+        r = set(part_list).intersection(set(damage_list))
+        if len(r) > 100:
+            return True
 
 
 
 if __name__ == '__main__':
-    path = '../../test/HouMen-Z'
-    part = 'HouMen-Z'
+    path = '../../test'
+    part = 'DaoCheJingZongCheng-Z'
     out_dir = path+'/'+part+'/'
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)

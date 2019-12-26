@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fb44ca84-b522-4299-a31c-6d9fa666cc0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_files/find_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_files/find_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/find_files/test_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_files/test_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/find_files/test_find_file3.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_files/test_find_file3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/find_files/transfer.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_files/transfer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jisuan_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/jisuan_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spilt file.py" beforeDir="false" afterPath="$PROJECT_DIR$/spilt file.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,49 +41,7 @@
       <recent name="$PROJECT_DIR$/tensorflow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.transfer">
-    <configuration name="find_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="modeltools" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/find_files" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_files/find_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="jisuan_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="modeltools" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jisuan_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.merge_file">
     <configuration name="merge_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="modeltools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,6 +55,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/merge_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="move_file_to_label" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="modeltools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/move_file_to_label.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="modeltools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/find_files" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/find_files/test_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.transfer" />
-        <item itemvalue="Python.find_file" />
-        <item itemvalue="Python.test_find_file3" />
         <item itemvalue="Python.merge_file" />
-        <item itemvalue="Python.jisuan_file" />
+        <item itemvalue="Python.test_file" />
+        <item itemvalue="Python.transfer" />
+        <item itemvalue="Python.move_file_to_label" />
+        <item itemvalue="Python.test_find_file3" />
       </list>
     </recent_temporary>
   </component>
@@ -188,30 +187,30 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="588" y="214" width="800" height="677" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1577067100259" />
-    <state x="640" y="392" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576823068298">
+    <state x="640" y="392" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577267110711">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="640" y="392" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576823068298" />
+    <state x="640" y="392" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1577267110711" />
     <state x="363" y="284" width="424" height="484" key="FileChooserDialogImpl/67.27.957.741@67.27.957.741" timestamp="1576125247380" />
-    <state width="1826" height="424" key="GridCell.Tab.0.bottom" timestamp="1577093580371">
+    <state width="1826" height="323" key="GridCell.Tab.0.bottom" timestamp="1577353054228">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1826" height="424" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1577093580371" />
+    <state width="1826" height="323" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1577353054228" />
     <state width="934" height="154" key="GridCell.Tab.0.bottom/67.27.957.741@67.27.957.741" timestamp="1576138570751" />
-    <state width="1826" height="424" key="GridCell.Tab.0.center" timestamp="1577093580370">
+    <state width="1826" height="323" key="GridCell.Tab.0.center" timestamp="1577353054227">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1826" height="424" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1577093580370" />
+    <state width="1826" height="323" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1577353054227" />
     <state width="934" height="154" key="GridCell.Tab.0.center/67.27.957.741@67.27.957.741" timestamp="1576138570751" />
-    <state width="1826" height="424" key="GridCell.Tab.0.left" timestamp="1577093580370">
+    <state width="1826" height="323" key="GridCell.Tab.0.left" timestamp="1577353054225">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1826" height="424" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1577093580370" />
+    <state width="1826" height="323" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1577353054225" />
     <state width="934" height="154" key="GridCell.Tab.0.left/67.27.957.741@67.27.957.741" timestamp="1576138570750" />
-    <state width="1826" height="424" key="GridCell.Tab.0.right" timestamp="1577093580371">
+    <state width="1826" height="323" key="GridCell.Tab.0.right" timestamp="1577353054227">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1826" height="424" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1577093580371" />
+    <state width="1826" height="323" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1577353054227" />
     <state width="934" height="154" key="GridCell.Tab.0.right/67.27.957.741@67.27.957.741" timestamp="1576138570751" />
     <state width="1826" height="339" key="GridCell.Tab.1.bottom" timestamp="1576752742310">
       <screen x="67" y="27" width="1853" height="1053" />

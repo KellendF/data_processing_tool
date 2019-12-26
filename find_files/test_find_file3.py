@@ -75,8 +75,8 @@ def judge_point(damage_point,part_point,img_size):
 
 
 if __name__ == '__main__':
-    path = '../../test'
-    part = 'HouMen-Z'
+    path = '../../test/QianBaoXianGangPi'
+    part = 'QianBaoXianGangPi'
     out_dir = path+'/'+part+'/'
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
