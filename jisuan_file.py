@@ -6,8 +6,9 @@ from data_to_heavy import *
 
 
 if __name__ == '__main__':
-    path = '../damage_train'
+    path = '../test'
     file_list = get_file(path)
+    print(len(file_list))
     list = []
     for i in file_list:
         list.append(i)

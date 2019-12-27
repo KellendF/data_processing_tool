@@ -31,5 +31,7 @@ if __name__ == '__main__':
     file_list1 = get_file('../test/')
     for file in file_list1:
         if file.endswith('.json'):
-            move_file(file,'../test/2019-03-11-banghao-jpg/')
+            move_file(file,'../test/20190211-whole-jiahe-jpg/')
+        if file.endswith('.xml'):
+            move_file(file,'../test/20190211-whole-jiahe-jpg/')
     print('移动完成')

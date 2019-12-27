@@ -21,7 +21,7 @@ def split_file(path):
 
 def create_dir_move_file(path,model):
     dir_path = os.path.dirname(path)
-    dir_name = dir_path.split('/')[-1].replace('data',model)
+    dir_name = dir_path.split('/')[-1].replace('jpg',model)
     directory = os.path.join(dir_path,dir_name)
     print(directory)
     new_path = os.path.join(directory,path.split('/')[-1])
@@ -35,7 +35,7 @@ def create_dir_move_file(path,model):
 
 
 if __name__ == '__main__':
-    path = '../JY_data/segment/glass/2019-12-13-singapore_glass_data'
+    path = '../test2/20190211-whole-jiahe-jpg/'
     file_list = get_file(path)
     for file_path in file_list:
         split_file(file_path)
