@@ -23,30 +23,23 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="01ab066a-ddec-4f0f-a4a7-bd6578757d1d">
-        <schema name="" object-types="table, view, index, dataset trigger, constraint, column" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="01ab066a-ddec-4f0f-a4a7-bd6578757d1d">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
+    <connection id="fea41261-56e2-47d8-a977-4427114c86a0">
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select  sum(zhezhou) from damage where zhezhou>0;
+select  count(*) from damage where zhezhou>0;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="01ab066a-ddec-4f0f-a4a7-bd6578757d1d" />
+    <connection id="fea41261-56e2-47d8-a977-4427114c86a0" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="01ab066a-ddec-4f0f-a4a7-bd6578757d1d" dataset=".damage" active-filter-id="EMPTY_FILTER">
-      <filter id="ce6a9bdc-f4d9-4dbd-9629-0476a0818cb1" name="0a0ccf730ae7477ae436721de645ae2a" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="name" operator="=" value="0a0ccf730ae7477ae436721de645ae2a" active="true" />
-      </filter>
-    </filter-actions>
-    <filter-actions connection-id="01ab066a-ddec-4f0f-a4a7-bd6578757d1d" dataset=".part" active-filter-id="" />
+    <filter-actions connection-id="fea41261-56e2-47d8-a977-4427114c86a0" dataset="main.damage" active-filter-id="" />
+    <filter-actions connection-id="fea41261-56e2-47d8-a977-4427114c86a0" dataset="main.part" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -71,7 +64,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="01ab066a-ddec-4f0f-a4a7-bd6578757d1d" active="true">
+      <connection id="fea41261-56e2-47d8-a977-4427114c86a0" active="true">
         <database>
           <name value="Connection" />
           <description value="" />
@@ -86,8 +79,7 @@
           <port value="1234" />
           <database value="database" />
           <files>
-            <file path="sqlite.db" schema="main" />
-            <file path="$PROJECT_DIR$/DC/data.db" schema="" />
+            <file path="$PROJECT_DIR$/DC/data.db" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />

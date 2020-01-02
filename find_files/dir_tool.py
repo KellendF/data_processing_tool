@@ -37,7 +37,7 @@ def get_file(path):
 
 if __name__ == '__main__':
     label_dict = {}
-    file_list = get_file('../../wfk')
+    file_list = get_file('../../train')
     print(len(file_list))
     # q = []
     # for i in range(5):

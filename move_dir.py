@@ -6,55 +6,84 @@ import shutil
 from multiprocessing import Process
 
 
-def move_dir(path,new_dir):
+# def move_dir(path,new_dir):
+#     '''
+#     根据文件夹分
+#     @param path:
+#     @param new_dir:
+#     @return:
+#     '''
+#     if not os.path.exists(new_dir):
+#         os.makedirs(new_dir)
+#     for mainpath, _, files in os.walk(path):
+#         for file in files:
+#             file_path = os.path.join(mainpath,file)
+#             dir_name = mainpath.split('/')[-1]
+#             new_dir_path = new_dir+'/'+dir_name+'/'
+#             if not os.path.exists(new_dir_path):
+#                 os.makedirs(new_dir_path)
+#             new_file_path = os.path.join(new_dir_path,file)
+#             shutil.move(file_path,new_file_path)
+
+
+def move_dir(file_path,new_dir):
+    '''
+    根据文件分
+    @param file_path:
+    @param new_dir:
+    @return:
+    '''
     if not os.path.exists(new_dir):
         os.makedirs(new_dir)
-    for mainpath, _, files in os.walk(path):
-        for file in files:
-            file_path = os.path.join(mainpath,file)
-            dir_name = mainpath.split('/')[-1]
-            new_dir_path = new_dir+'/'+dir_name+'/'
-            if not os.path.exists(new_dir_path):
-                os.makedirs(new_dir_path)
-            new_file_path = os.path.join(new_dir_path,file)
-            shutil.copyfile(file_path,new_file_path)
+    # new_file_path = os.path.join(new_dir_path, file)
+    shutil.move(file_path, new_dir)
 
-def func(i,list_dir):
+def func(i,file_list):
     i += 1
     end_num = num * i
     if i == n:
-        end_num = len(list_dir)
+        end_num = len(file_list)
     for j in range(num * (i - 1), end_num):
-        move_dir(list_dir[j], new_dir.format(i))
+        move_dir(file_list[j], new_dir.format(i))
 
+
+# def find_dir(path):
+#     '''
+#     获取当前文件夹下所有目录
+#     @param path:
+#     @return:
+#     '''
+#     dir_list = []
+#     files = os.listdir(path)
+#     for file_name in files:
+#         file_path = os.path.join(path, file_name)
+#         if os.path.isdir(file_path):
+#             dir_list.append(file_path)
+#     return dir_list
 
 def find_dir(path):
-    dir_list = []
-    files = os.listdir(path)
-    for file_name in files:
-        file_path = os.path.join(path, file_name)
-        if os.path.isdir(file_path):
-            dir_list.append(file_path)
-    return dir_list
+    """
+    获取当前目录下所有文件
+    @param path: 主目录完整路径
+    @return: 当前目录下的所有文件列表
+    """
+    file_list = []
+    for path, _, files in os.walk(path):
+        if files:
+            for filename in files:
+                file_list.append(os.path.join(path, filename))
+    return file_list
 
 if __name__ == '__main__':
-    path = '../train/data'
-    list_dir = find_dir(path)
-    new_dir = '../train/task_{}'
+    path = '../zhousf/'
+    list_file = find_dir(path)
+    new_dir = '../zhousf/task_{}'
     n = 3
-    num = len(list_dir) // n
+    num = len(list_file) // n
     print(num)
-    # for i in range(n):
-    #     i+=1
-    #     end_num = num*i
-    #     if i == n:
-    #        end_num = len(list_dir)
-    #     for j in range(dir_num,end_num):
-    #         move_dir(list_dir[j], new_dir.format(i))
-    #     dir_num = num*i
     p_list = []
     for i in range(n):
-        p = Process(target=func,args=(i,list_dir))
+        p = Process(target=func,args=(i,list_file))
         p.start()
     for j in p_list:
         j.join()
