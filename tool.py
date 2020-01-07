@@ -3,6 +3,7 @@
 '''
 import hashlib
 import os
+import filetype
 
 def get_filename(path):
     """
@@ -21,10 +22,10 @@ def rename_file(path,newname):
     @param path: 文件完整路径
     @return: None
     '''
-    file_type = path.split('.')[-1]
-    name = newname + '.' + file_type
-    oldname = path.split('/')[-1]
-    newpath = path.replace(oldname,name,1)
+    oldname = path.split('/')[-1].split('.')[0][::-1]
+    print(oldname)
+    newpath = path[::-1].replace(oldname,newname[::-1],1)[::-1]
+    print(newpath)
     os.rename(path,newpath)
 
 def remove_file(path):
@@ -37,10 +38,12 @@ def remove_file(path):
         os.remove(path)
 
 
+def judge_filetype(path):
+    return filetype.guess(path).extension
+
 if __name__ == '__main__':
-    img_set = []
-    path = '../u=3437217665,1564280326&fm=26&gp=0.jpg'
-    filename = get_filename(path)
-    
+    path = '../train/123/123.JPG'
+    # print(judge_filetype(path))
+    rename_file(path,'456')
 
 

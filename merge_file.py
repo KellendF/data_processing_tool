@@ -28,11 +28,16 @@ def copy_file(old_path,new_dir):
 
 
 if __name__ == '__main__':
-    file_list1 = get_file('..//')
+    file_list1 = get_file('../test')
     for file in file_list1:
-        # move_file(file, '../test/2019-03-11-banghao-data/jpg_json/')
-        if file.endswith('.json'):
-            move_file(file,'../test/20190411-whole-yunju-jpg/')
-        if file.endswith('.xml'):
-            move_file(file,'../test/20190411-whole-yunju-jpg/')
+        # move_file(file, '../test/jpg_json/')
+        if os.path.splitext(file)[-1] in ['.jpeg', '.JPG', '.jpg', '.png','.PNG']:
+        # if
+            move_file(file, '../test/1/')
+        elif os.path.splitext(file)[-1] in ['.zip','.rar']:
+            move_file(file,'../test/2/')
+        # else:
+        #     move_file(file,'../test/file/')
+        # if file.endswith('.xml'):
+        #     move_file(file,'../test/20190411-whole-yunju-jpg/')
     print('移动完成')
