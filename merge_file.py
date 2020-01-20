@@ -28,14 +28,13 @@ def copy_file(old_path,new_dir):
 
 
 if __name__ == '__main__':
-    file_list1 = get_file('../test')
+    file_list1 = get_file('../test/jpg/')
     for file in file_list1:
-        # move_file(file, '../test/jpg_json/')
+        # move_file(file, '../test/img/')
         if os.path.splitext(file)[-1] in ['.jpeg', '.JPG', '.jpg', '.png','.PNG']:
-        # if
-            move_file(file, '../test/1/')
-        elif os.path.splitext(file)[-1] in ['.zip','.rar']:
-            move_file(file,'../test/2/')
+            move_file(file, '../test/11/')
+        # elif os.path.splitext(file)[-1] in ['.zip','.rar']:
+        #     move_file(file,'../test/2/')
         # else:
         #     move_file(file,'../test/file/')
         # if file.endswith('.xml'):

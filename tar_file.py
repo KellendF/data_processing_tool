@@ -79,7 +79,7 @@ def unzip_file(zip_src):
 
 if __name__ == '__main__':
     EXT = ['.gz','.zip','.rar']
-    path = '../test/tar/'
+    path = '../test/score/'
     file_list = get_file(path)
     for file in file_list:
         unzip_file(file)

@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb44ca84-b522-4299-a31c-6d9fa666cc0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modeltools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modeltools.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DC/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/DC/data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DC/data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/DC/data_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DC/data_process_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/DC/data_process_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DC/data_process_judge.py" beforeDir="false" afterPath="$PROJECT_DIR$/DC/data_process_judge.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DC/data_process_xml.py" beforeDir="false" afterPath="$PROJECT_DIR$/DC/data_process_xml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_to_heavy.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_to_heavy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_md5.py" beforeDir="false" afterPath="$PROJECT_DIR$/img_md5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jisuan_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/jisuan_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/merge_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/move_dir.py" beforeDir="false" afterPath="$PROJECT_DIR$/move_dir.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/move_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/move_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spilt file.py" beforeDir="false" afterPath="$PROJECT_DIR$/spilt file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tar_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/tar_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/code1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow/opencv_.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +50,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UpPCYdIRPZ8RY1Kbpr12nSYg4w" />
@@ -54,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../py12306" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -68,7 +82,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.tool">
-    <configuration name="data_process_judge" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="data_process" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="modeltools" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,7 +95,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DC/data_process_judge.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DC/data_process.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="img_md5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="data_to_heavy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="modeltools" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -103,7 +117,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/img_md5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_to_heavy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="jisuan_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="gray_img" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="modeltools" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,7 +139,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jisuan_file.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gray_img.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,6 +182,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tool.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -180,10 +195,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.tool" />
-        <item itemvalue="Python.img_md5" />
-        <item itemvalue="Python.data_process_judge" />
+        <item itemvalue="Python.data_process" />
         <item itemvalue="Python.tar_file" />
-        <item itemvalue="Python.jisuan_file" />
+        <item itemvalue="Python.data_to_heavy" />
+        <item itemvalue="Python.gray_img" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +232,15 @@
       <workItem from="1578013047590" duration="6070000" />
       <workItem from="1578019550655" duration="12785000" />
       <workItem from="1578301393860" duration="68000" />
+      <workItem from="1579251420607" duration="537000" />
+      <workItem from="1579404133792" duration="18000" />
+      <workItem from="1579411187286" duration="3891000" />
+      <workItem from="1579421276371" duration="697000" />
+      <workItem from="1579422856092" duration="760000" />
+      <workItem from="1579428039628" duration="599000" />
+      <workItem from="1579481535818" duration="12000" />
+      <workItem from="1579492298044" duration="1990000" />
+      <workItem from="1579498562283" duration="1392000" />
     </task>
     <servers />
   </component>
@@ -245,51 +269,51 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="366" y="317" width="639" height="406" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1577435172302" />
-    <state x="885" y="327" width="524" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577418017272">
+    <state x="885" y="327" width="524" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578389312376">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="885" y="327" width="524" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1577418017272" />
-    <state x="697" y="337" width="571" height="427" key="DBNavigator.ConnectionInfoDialog" timestamp="1577701555889">
+    <state x="885" y="327" width="524" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578389312376" />
+    <state x="697" y="337" width="571" height="427" key="DBNavigator.ConnectionInfoDialog" timestamp="1578563774292">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="697" y="337" width="571" height="427" key="DBNavigator.ConnectionInfoDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1577701555889" />
+    <state x="697" y="337" width="571" height="427" key="DBNavigator.ConnectionInfoDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578563774292" />
     <state x="586" y="409" width="824" height="564" key="DBNavigator.DatasetFilterDialog" timestamp="1577700960567">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="586" y="409" width="824" height="564" key="DBNavigator.DatasetFilterDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1577700960567" />
-    <state x="526" y="210" width="924" height="682" key="DBNavigator.ProjectSettingsDialog" timestamp="1577701582015">
+    <state x="526" y="210" width="924" height="682" key="DBNavigator.ProjectSettingsDialog" timestamp="1578563853312">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="526" y="210" width="924" height="682" key="DBNavigator.ProjectSettingsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1577701582015" />
+    <state x="526" y="210" width="924" height="682" key="DBNavigator.ProjectSettingsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578563853312" />
     <state x="762" y="352" width="452" height="400" key="DBNavigator.ResultSetRecordViewerDialog" timestamp="1577701163966">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="762" y="352" width="452" height="400" key="DBNavigator.ResultSetRecordViewerDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1577701163966" />
-    <state x="861" y="384" width="506" height="484" key="FileChooserDialogImpl" timestamp="1578297417823">
+    <state x="861" y="384" width="506" height="484" key="FileChooserDialogImpl" timestamp="1579402354892">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="861" y="384" width="506" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1578297417823" />
+    <state x="861" y="384" width="506" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1579402354892" />
     <state x="363" y="284" width="424" height="484" key="FileChooserDialogImpl/67.27.957.741@67.27.957.741" timestamp="1576125247380" />
-    <state width="1799" height="283" key="GridCell.Tab.0.bottom" timestamp="1578364598636">
+    <state width="1799" height="238" key="GridCell.Tab.0.bottom" timestamp="1579509865833">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1799" height="283" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578364598636" />
-    <state width="934" height="154" key="GridCell.Tab.0.bottom/67.27.957.741@67.27.957.741" timestamp="1576138570751" />
-    <state width="1799" height="283" key="GridCell.Tab.0.center" timestamp="1578364598636">
+    <state width="1799" height="238" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1579509865833" />
+    <state width="903" height="148" key="GridCell.Tab.0.bottom/67.27.957.741@67.27.957.741" timestamp="1579251478908" />
+    <state width="1799" height="238" key="GridCell.Tab.0.center" timestamp="1579509865831">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1799" height="283" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578364598636" />
-    <state width="934" height="154" key="GridCell.Tab.0.center/67.27.957.741@67.27.957.741" timestamp="1576138570751" />
-    <state width="1799" height="283" key="GridCell.Tab.0.left" timestamp="1578364598635">
+    <state width="1799" height="238" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1579509865831" />
+    <state width="903" height="148" key="GridCell.Tab.0.center/67.27.957.741@67.27.957.741" timestamp="1579251478907" />
+    <state width="1799" height="238" key="GridCell.Tab.0.left" timestamp="1579509865830">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1799" height="283" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578364598635" />
-    <state width="934" height="154" key="GridCell.Tab.0.left/67.27.957.741@67.27.957.741" timestamp="1576138570750" />
-    <state width="1799" height="283" key="GridCell.Tab.0.right" timestamp="1578364598636">
+    <state width="1799" height="238" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1579509865830" />
+    <state width="903" height="148" key="GridCell.Tab.0.left/67.27.957.741@67.27.957.741" timestamp="1579251478907" />
+    <state width="1799" height="238" key="GridCell.Tab.0.right" timestamp="1579509865832">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1799" height="283" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578364598636" />
-    <state width="934" height="154" key="GridCell.Tab.0.right/67.27.957.741@67.27.957.741" timestamp="1576138570751" />
+    <state width="1799" height="238" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1579509865832" />
+    <state width="903" height="148" key="GridCell.Tab.0.right/67.27.957.741@67.27.957.741" timestamp="1579251478908" />
     <state width="1826" height="339" key="GridCell.Tab.1.bottom" timestamp="1576752742310">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -306,18 +330,18 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1826" height="339" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576752742310" />
-    <state x="408" y="344" key="SettingsEditor" timestamp="1578275594765">
+    <state x="408" y="231" key="SettingsEditor" timestamp="1579509324333">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="408" y="344" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1578275594765" />
+    <state x="408" y="231" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1579509324333" />
     <state x="67" y="38" key="SettingsEditor/67.27.957.741@67.27.957.741" timestamp="1576126773336" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576060405093">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576060405093" />
-    <state x="462" y="158" width="1052" height="789" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577430084320">
+    <state x="462" y="158" width="1052" height="789" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578626606877">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="462" y="158" width="1052" height="789" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1577430084320" />
+    <state x="462" y="158" width="1052" height="789" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1578626606877" />
   </component>
 </project>

@@ -7,6 +7,7 @@ import sqlite3
 import hashlib
 import json
 import shutil
+import time
 
 class JudgeDb(object):
     def __init__(self,path):
@@ -107,14 +108,14 @@ class JudgeDb(object):
         file_list = self.get_file(self.path)
         self.sum_num = len(file_list)
         for file_path in file_list:
+            if not os.path.exists(file_path):
+                continue
             img_md5 = self.get_file_info(file_path)
+            new_path = self.rename_file(file_path, img_md5)
             if img_md5 in self.img_info:
-                del_dir = '../../test/del_img/'
-                self.move_file(file_path,del_dir)
                 self.del_num += 1
                 continue
             self.img_info.append(img_md5)
-            new_path = self.rename_file(file_path,img_md5)
             if self.judge_file_to_db('part',img_md5):
                 self.move_file(new_path,'../../test/part/')
                 self.part_num += 1
@@ -123,7 +124,7 @@ class JudgeDb(object):
                     self.move_file(new_path, '../../test/damage/')
                     self.damage_num += 1
                 else:
-                    part_path = '../../test/part/'+new_path.split('/')[-1]
+                    part_path = '../../test/part/'+ new_path.split('/')[-1]
                     self.copy_file(part_path,'../../test/damage/')
                     self.damage_num += 1
             print(img_md5,'=======process ok')
@@ -133,4 +134,7 @@ class JudgeDb(object):
 if __name__ == '__main__':
     path = '../../test/img/'
     d = JudgeDb(path)
+    start = time.time()
     d.run()
+    end = time.time()
+    print('共用时%s'%(end-start))

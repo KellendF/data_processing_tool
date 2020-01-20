@@ -35,7 +35,7 @@ def create_dir_move_file(path,model):
 
 
 if __name__ == '__main__':
-    path = '../test2/20190211-whole-jiahe-jpg/'
+    path = '../test/same_part/'
     file_list = get_file(path)
     for file_path in file_list:
         split_file(file_path)

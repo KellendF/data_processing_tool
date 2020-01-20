@@ -131,10 +131,8 @@ class Data(object):
         @param path: 文件完整路径,文件新名称
         @return: None
         '''
-        file_type = path.split('.')[-1]
-        name = newname + '.' + file_type
-        oldname = path.split('/')[-1]
-        newpath = path.replace(oldname, name, 1)
+        oldname = path.split('/')[-1].split('.')[0][::-1]
+        newpath = path[::-1].replace(oldname, newname[::-1], 1)[::-1]
         try:
             os.rename(path, newpath)
         except Exception as e:

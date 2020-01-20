@@ -138,8 +138,8 @@ class Data(object):
         with open(file_path, 'r') as f:
             json_info = f.read()
             new_json_file = json_info.replace(jpg_name, new_name)
-        new_xml_path = os.path.dirname(file_path)+'/'+new_name+'.'+jpg_name.split('.')[-1]
-        # new_xml_path = file_path.replace(jpg_name,new_name)
+        # new_xml_path = os.path.dirname(file_path)+'/'+new_name+'.'+jpg_name.split('.')[-1]
+        new_xml_path = file_path.replace(jpg_name,new_name)
         with open(new_xml_path, 'w') as f:
             f.write(new_json_file)
         os.remove(file_path)
@@ -152,12 +152,10 @@ class Data(object):
         @param path: 文件完整路径,文件新名称
         @return: None
         '''
-        file_type = path.split('.')[-1]
-        name = newname + '.' + file_type
-        oldname = path.split('/')[-1]
-        newpath = path.replace(oldname,name,1)
+        oldname = path.split('/')[-1].split('.')[0][::-1]
+        newpath = path[::-1].replace(oldname, newname[::-1], 1)[::-1]
         try:
-            os.rename(path,newpath)
+            os.rename(path, newpath)
         except Exception as e:
             print(e)
         return newpath
@@ -220,7 +218,7 @@ class Data(object):
 
     def run(self,path):
         '''
-
+        启动器
         @param path:
         @return:
         '''
@@ -262,8 +260,8 @@ class Data(object):
 
 if __name__ == '__main__':
     path = '../../test'
-    da = Data('damage','精友数据','画框','xml','9种损伤')
-    # da = Data('part','精友数据','画框','xml')
+    # da = Data('damage','精友数据','画框','xml','9种损伤')
+    da = Data('part','精友数据','画框','xml')
     da.run(path)
 
 

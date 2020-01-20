@@ -76,14 +76,15 @@ def rename_file(path,newname):
     '''
     更改文件名称
     @param path: 文件完整路径,文件新名称
-    @return: None
+    @return: 改名后路径
     '''
-    file_type = path.split('.')[-1]
-    name = newname + '.' + file_type
-    oldname = path.split('/')[-1]
-    newpath = path.replace(oldname,name,1)
-    os.rename(path,newpath)
-
+    oldname = path.split('/')[-1].split('.')[0][::-1]
+    newpath = path[::-1].replace(oldname, newname[::-1], 1)[::-1]
+    try:
+        os.rename(path, newpath)
+    except Exception as e:
+        print(e)
+    return newpath
 
 def remove_file(path):
     '''
@@ -126,7 +127,6 @@ def move_file(old_path,new_dir):
     if not os.path.exists(new_dir):
         os.makedirs(new_dir)
     new_path = new_dir+old_path.split('/')[-1]
-
     try:
         shutil.move(old_path,new_path)
     except:
@@ -150,28 +150,37 @@ def copy_file(old_path,new_dir):
         print('{} is error'.format(old_path))
 
 
+def parse_file(path):
+    with open(path,'rb') as f:
+        print(f.read())
+
 
 if __name__ == '__main__':
-    has_list = []
-    same_list = []
-    EXT = ['.jpg','.png','.jpeg']
-    i = 0
-    path = '../filezilla_'
-    file_list = get_file(path)
-    for file_path in file_list:
-        if os.path.splitext(file_path)[-1] in EXT:
-            has = get_file_info(file_path)
-            if has in has_list:
-                i+= 1
-                # shutil.move(file_path,'../train')
-                same_list.append(file_path)
-                continue
-            has_list.append(has)
-
-    print(same_list)
-    print('有{}个相同文件'.format(i))
+    # has_list = []
+    # same_list = []
+    # EXT = ['.jpg','.png','.jpeg']
+    # i = 0
+    # path = '../filezilla_'
+    # file_list = get_file(path)
+    # for file_path in file_list:
+    #     if os.path.splitext(file_path)[-1] in EXT:
+    #         has = get_file_info(file_path)
+    #         if has in has_list:
+    #             i+= 1
+    #             # shutil.move(file_path,'../train')
+    #             same_list.append(file_path)
+    #             continue
+    #         has_list.append(has)
+    #
+    # print(same_list)
+    # print('有{}个相同文件'.format(i))
 
     #
     # with open('../test/yunce_aoxian_000001_022_055.jpg','rb') as f:
     #     data = f.read()
     #     print(hashlib.md5(data).hexdigest())
+    file_list = get_file('../test/mm/')
+    for file in file_list:
+        info = parse_file(file)
+        if info:
+            move_file(file,'../test/mm/')

@@ -109,8 +109,8 @@ class Data(object):
                 img_name = dict_info['imagePath']
                 width = dict_info['imgWidth']
                 height = dict_info['imgHeight']
-                # company = dict_info['companyName']
-                company = '新加坡'
+                company = dict_info['companyName']
+                # company = '新加坡'
                 for label_ in dict_info['shapes']:
                     label = label_['label']
                     if label == 'wuxulabel':
@@ -159,10 +159,8 @@ class Data(object):
         @param path: 文件完整路径,文件新名称
         @return: None
         '''
-        file_type = path.split('.')[-1]
-        name = newname + '.' + file_type
-        oldname = path.split('/')[-1]
-        newpath = path.replace(oldname, name, 1)
+        oldname = path.split('/')[-1].split('.')[0][::-1]
+        newpath = path[::-1].replace(oldname, newname[::-1], 1)[::-1]
         try:
             os.rename(path, newpath)
         except Exception as e:
@@ -270,7 +268,7 @@ class Data(object):
                             json_path, xml_path = self.update_json_xml(file_path, img_md5)
                             jpg_path = self.rename_file(img_path, img_path.replace(img_name, img_md5))
                         self.split_file(json_path, xml_path, jpg_path)
-                        # self.insert_data_to_db(img_md5, company, width, height, label_dict)
+                        self.insert_data_to_db(img_md5, company, width, height, label_dict)
                         print(img_name, '----ok')
                     else:
                         # new_dir = '../../train/same_file/'
@@ -291,7 +289,7 @@ class Data(object):
 
 
 if __name__ == '__main__':
-    path = '../../train'
-    da = Data('damage','09年修理厂采集','多边形','json/xml','9种损伤')
-    # da = Data('part', '第三方公司采集的视频抽帧', '多边形', 'json/xml')
+    path = '../../test/img/'
+    # da = Data('part','09年修理厂采集','多边形','json/xml','9种损伤')
+    da = Data('part', '第三方公司采集的视频抽帧', '多边形', 'json')
     da.run(path)

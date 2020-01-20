@@ -3,7 +3,7 @@
 '''
 import os
 import shutil
-from multiprocessing import Process
+from threading import Thread
 
 
 
@@ -43,17 +43,19 @@ def find_dir(path):
     return file_list
 
 if __name__ == '__main__':
-    path = '../zhousf/task_3'
+    path = '../test/images/'
     list_file = find_dir(path)
     new_dir = path+'/{}'
     n = 10
     num = len(list_file) // n
-    if len(list_file) %n != 0:
+    if len(list_file) % n != 0:
          num += 1
     print(num)
     p_list = []
+    # for i in range(n):
+    #     func(i,list_file)
     for i in range(n):
-        p = Process(target=func,args=(i,list_file))
+        p = Thread(target=func,args=(i,list_file))
         p.start()
     for j in p_list:
         j.join()
